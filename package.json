@@ -1,0 +1,24 @@
+{
+  "name": "teksystemsassignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start" : "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ortrud/TekSystemsAssignment.git"
+  },
+  "author": "ortrud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ortrud/TekSystemsAssignment/issues"
+  },
+  "homepage": "https://github.com/ortrud/TekSystemsAssignment#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "lodash": "^4.17.21"
+  }
+}
