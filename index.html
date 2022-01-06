@@ -2,54 +2,55 @@
 
 <html lang="en">
 <head>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>Compass Test</title>
+  <title>Countries Search</title>
 
   <!-- Bootstrap styles -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"
   >
-<style>
-  ul {
-  list-style-type: none;
-}
-
-</style>
 </head>
 
-<div class="container-fluid">
+<body>
+  
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+          crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+  
+  <script src="index.js"></script>
 
-  <div class="card" style="width: 100%;">
-    <div class="card-header">
-      <strong>AAAAAAAAAAAAAAAA</strong>
-    </div>
-    <div class="card-body" style="display:flex; flex-direction:row;">
-      
-      <div>
-        <!-- <div id="daterange_container" style="max-width:40em"></div> -->
-        <div id="catalog_container" style="max-width:40em"></div>
+  <div class="container-fluid">
+
+    <div class="card" style="width: 100%;">
+      <div class="card-header">
+        <table>
+          <tr><td>Country Name </td><td><input type=text id="countryName"/> <button id="searchByName">Search</button></td></tr>
+          <tr><td>Country Code </td><td><input type=text id="countryCode"/> <button id="searchByCode">Search</button></td></tr>
+          <tr><td colspan=3>
+            <button id="positiveRandom" title="Attempt to find 10 random countries">Random Positive Tests</button>  
+            <button id="positiveComplete" title="Find all countries to identify failures">Complete Positive Tests</button> 
+            <button id="negative" title="these searches are expected to fail">Negative Tests</button>
+          </td></tr>
+        </table>
       </div>
 
+      <div class="card-body" style="display:flex; flex-direction:row;">
+      
+        <div>
+          <div class="loading" style="display:none">Running... Please Wait<p><p></div>
+          <div id=output></div>
+        </div>
+
+      </div>
     </div>
+
   </div>
 
-</div>
-
-
-<!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-<script src="plugins/sprintf-js/dist/sprintf.min.js"></script>
-
-<script src="index.js"></script>
 
 </body>
 </html>
