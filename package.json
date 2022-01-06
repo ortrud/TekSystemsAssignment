@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm test",
-    "start" : "node server.js"
+    "test": "node cli.test.js",
+    "start": "node cli.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ortrud/TekSystemsAssignment#readme",
   "dependencies": {
     "axios": "^0.24.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "prompt": "^1.2.0"
   }
 }
